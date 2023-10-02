@@ -1,0 +1,12 @@
+#div1{
+    border: 3px solid turquoise;
+    height: 200px;
+    width: 200px;
+
+    & div{
+        background-color: brown;
+        height: 100px;
+        width: 100px;
+        margin: 50px;
+    }
+}
