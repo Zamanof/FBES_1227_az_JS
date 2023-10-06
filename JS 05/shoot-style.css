@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+    position: relative;
+}
+
+#gun, #bullet, #aim{
+    position: absolute;
+}
+#bullet, #aim{
+    border-radius: 50%;
+}
+#gun{
+    background: turquoise;
+    height: 20px;
+    width: 50px;
+    left: 0;
+    top: 50px;
+}
+#bullet{
+    background: brown;
+    height: 20px;
+    width: 20px;
+    top: 50px;
+    z-index: -1;
+}
+
+#aim{
+    background: red;
+    height: 30px;
+    width: 30px;
+    top: 45px;
+    left: 200px;
+}

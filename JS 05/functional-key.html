@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Click on page and pres a key</h1>
+<h2 id="out"></h2>
+
+<script>
+    document.body.onkeydown = (e)=>{
+        e.preventDefault()
+        let text = ''
+        if(e.ctrlKey) text += "Ctrl - "
+        if(e.altKey) text += "Alt - "
+        if(e.shiftKey) text += "Shift - "
+        text += e.key
+        out.innerText = text
+    }
+</script>
+</body>
+</html>

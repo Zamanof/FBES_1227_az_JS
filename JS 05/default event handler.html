@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style>
+    #div1{
+      border: 2px solid red;
+      height: 200px;
+      width: 200px;
+    }
+  </style>
+</head>
+<body>
+<div id="div1"></div>
+<script>
+  window.onmousedown = (e)=>{
+    let bgColor;
+
+    switch (e.which){
+      case 1:
+        console.log(1)
+        bgColor = 'green';
+        break;
+      case 2:
+        console.log(2)
+        bgColor = 'yellow';
+        break;
+      case 3:
+        console.log(3)
+        bgColor = 'black';
+        break;
+    }
+    window.div1.oncontextmenu = ()=> false
+    window.div1.style.backgroundColor = bgColor
+  }
+
+</script>
+</body>
+</html>
