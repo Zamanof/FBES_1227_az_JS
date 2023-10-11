@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Frames</title>
+    <style>
+        iframe{
+            border: 2px solid turquoise;
+            height: 300px;
+            width: 300px;
+            margin: 30px;
+        }
+        button{
+            margin: 10px 150px;
+
+        }
+
+    </style>
+</head>
+<body>
+    <iframe src="about:blank"></iframe>
+    <button
+            onclick="window.frames[0].location = 'https://itstep.org'">
+        IT Step
+    </button>
+    <iframe src="about:blank"></iframe>
+    <button
+            onclick="window.frames[1].location = 'https://mystat.itstep.org'">
+        MyStat
+    </button>
+    <iframe src="about:blank" name="frame3"></iframe>
+    <button
+            onclick="window.frames[2].location = 'https://itstep.az'">
+       IT Step Azerbaijan
+    </button>
+</body>
+</html>

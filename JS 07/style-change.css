@@ -1,0 +1,11 @@
+body{
+    position: relative;
+}
+
+.item, .phantom{
+    height: 50px;
+    width: 300px;
+}
+.phantom{
+    position: absolute;
+}

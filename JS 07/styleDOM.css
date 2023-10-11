@@ -1,0 +1,15 @@
+#div1{
+    border: 3px solid olivedrab;
+    height: 150px;
+    width: 400px;
+    margin: 20px;
+    padding: 15px;
+}
+#div2{
+    border: 3px dotted firebrick;
+    float: right;
+    height: 140px;
+    overflow: auto;
+    padding: 5px;
+    width: 200px;
+}
