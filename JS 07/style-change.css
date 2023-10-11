@@ -3,6 +3,7 @@ body{
 }
 
 .item, .phantom{
+    list-style: none;
     height: 50px;
     width: 300px;
 }

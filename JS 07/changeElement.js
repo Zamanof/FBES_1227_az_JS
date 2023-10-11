@@ -27,7 +27,7 @@ document.onmousemove = (e)=>{
             let lowerElement = document.elementFromPoint(e.clientX, e.clientY)
             phantomElement.style.zIndex = '1'
             if(lowerElement != null
-                && lowerElement != draggedElement
+                && lowerElement !== draggedElement
                 && lowerElement.className.indexOf('item') > -1){
                 if (lowerElement === window.list.lastChild
                     && e.pageX > (lowerElement.offsetTop + lowerElement.offsetHeight/2)){
@@ -36,7 +36,7 @@ document.onmousemove = (e)=>{
                 }
                 else{
                     if (e.pageY > (lowerElement.offsetTop + lowerElement.offsetHeight/2)){
-                        if(lowerElement.previousSibling == draggedElement){
+                        if(lowerElement.previousSibling === draggedElement){
                             window.list.removeChild(draggedElement)
                             window.list.insertBefore(draggedElement, lowerElement.nextSibling)
                         }
