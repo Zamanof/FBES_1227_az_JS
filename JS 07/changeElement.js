@@ -10,6 +10,7 @@ document.onmousedown = (e)=>{
         draggedElement = clickedElement
     }
 }
+
 document.onmousemove = (e)=>{
     if (draggedElement){
         if(!phantomElement){

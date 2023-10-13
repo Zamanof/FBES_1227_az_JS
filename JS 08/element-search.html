@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>element search</title>
+    <link rel="stylesheet" href="element-search-style.css">
+</head>
+<body>
+    <div id="div1" class="class1" name="name1">
+        div1, class1, name1
+    </div>
+
+    <div id="div2" class="class2" name="name2">
+        div2, class2, name2
+    </div>
+
+    <div id="div3" class="class1 class2">
+        div3, class1, class2
+    </div>
+    <p id="p1" class="class1">p1, class1, what</p>
+    <p id="p2" class="class2" name="name1">p2, class2, name1</p>
+    <br>
+    <button onclick="selectDiv1()">id = div1</button>
+    <button onclick="selectClass1()">Class 1</button>
+    <button onclick="selectP()">tag = P</button>
+    <button onclick="selectName1()">name = name1</button>
+    <button onclick="clr()">Clear</button>
+    <script src="element-search-style.js"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+body{
+    margin: 0;
+}
+div, p{
+    display: inline-block;
+    border: 1px solid turquoise;
+    height: 60px;
+    width: 100px;
+    margin: 10px;
+    padding-top: 40px;
+    text-align: center;
+}
+.class1{
+    background: #eee;
+}
+button{
+    margin-left: 25px;
+    margin-top: 30px;
+}
