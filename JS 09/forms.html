@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Forms</title>
+    <style>
+        body {
+            font-family: "Courier New", Courier, monospace;
+        }
+    </style>
+</head>
+<body>
+<h2>Add new contact</h2>
+<form action="" method="get">
+    <b>Name</b>
+    <input type="text" placeholder="Enter name" name="name">
+    <br><br>
+    <input type="submit" value="Save">
+    <input type="button" value="One more phone"
+           style="margin-left:50px;"
+           onclick="add_more()"
+    >
+    <br><br>
+    Phone number
+    <input type="text"
+           name="phone"
+           id="ph"
+           placeholder="Enter phone number">
+    Phone type
+    <select name="type">
+        <option value="1" selected>Cellular</option>
+        <option value="2">Home</option>
+        <option value="3">Work</option>
+    </select>
+    Priority
+    <input type="radio" name="main" value="1" checked>
+</form>
+
+<button onclick="showElements()">Show elements</button>
+<button onclick="showChildren()">Show children</button>
+<button onclick="showNodes()">Show nodes</button>
+
+<p id="out"></p>
+<script src="forms.js"></script>
+</body>
+</html>
