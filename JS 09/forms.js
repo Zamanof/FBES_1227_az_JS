@@ -53,6 +53,16 @@ const add_more = () => {
     f.appendChild(text2)
     let selector = f.elements['type']
     let newSelector = selector.cloneNode(true)
+    newSelector.name = `type${phoneCounter}`
     f.appendChild(newSelector)
+
+    let text3 = document.createTextNode(' Priority ')
+    f.appendChild(text3)
+
+    let mainRadio = document.createElement('input')
+    mainRadio.type = 'radio'
+    mainRadio.name = 'main'
+    mainRadio.value = phoneCounter
+    f.appendChild(mainRadio)
 
 }
