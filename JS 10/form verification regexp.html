@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>form verification with regex</title>
+    <link rel="stylesheet" href="form-style.css">
+</head>
+<body>
+<form method="get" id="regForm" onsubmit="return checkForm()">
+    <p>
+        <b>First name: </b>
+        <input type="text" id="name1" name="name1" required/>
+    </p>
+    <p>
+        <b>Last name: </b>
+        <input type="text" id="name2" name="name2" required/>
+    </p>
+
+    <p>
+        <b>Login: </b>
+        <input type="text" id="login" name="login" required/>
+    </p>
+    <p>
+        <b>Password: </b>
+        <input type="password" id="pass1" name="password" required/>
+    </p>
+
+    <p>
+        <b>Confirm: </b>
+        <input type="password" id="pass2" name="password2" required/>
+    </p>
+    <p>
+        <b>E-mail: </b>
+        <input placeholder="Only gmail.com"
+                type="email" id="email" name="email" required/>
+    </p>
+    <p>
+        <b>Phone: </b>
+        <input type="text" id="phone" name="phone" required/>
+    </p>
+    <label>
+        <input type="checkbox" name="accept" required/>
+        I accept all rules
+    </label>
+    <p>
+        <input type="submit" value="Register">
+    </p>
+</form>
+
+<script src="verification.js"></script>
+</body>
+</html>

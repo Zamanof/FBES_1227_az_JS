@@ -1,0 +1,9 @@
+#regForm b{
+    display: inline-block;
+    padding-top: 5px;
+    width: 100px;
+}
+
+#regForm input[type="submit"]{
+    margin: 15px 150px;
+}
