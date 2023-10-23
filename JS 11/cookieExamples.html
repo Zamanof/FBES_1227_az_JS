@@ -1,0 +1,66 @@
+<!--<!DOCTYPE html>-->
+<!--<html>-->
+
+<!--<body>-->
+<!--<p id="out"></p>-->
+<!--</body>-->
+<!--<script>-->
+<!--    document.cookie = "Registered=User; expires = Mon 23 Oct 2023 19:35:00 GMT; path=/"-->
+<!--    document.cookie = "Organization=Step; expires = Mon 23 Oct 2023 19:35:00 GMT; path=/"-->
+<!--    // window.out.innerHTML = document.cookie-->
+
+<!--    let x = document.cookie;-->
+<!--    let str = x.split('; ');-->
+<!--    let cookieObject = {};-->
+<!--    let c;-->
+<!--    for (let i = 0; i < str.length; i++){-->
+<!--        c = str[i].split('=')-->
+<!--        cookieObject[c[0]] = c[1]-->
+
+<!--    }-->
+
+<!--    for (let co in  cookieObject){-->
+<!--        window.out.innerHTML += `${co} = ${cookieObject[co]} <br/>`-->
+<!--    }-->
+
+<!--</script>-->
+<!--</html>-->
+
+
+<!--<!DOCTYPE html>-->
+<!--<html>-->
+
+<!--<body onload="checkReg()">-->
+<!--<div id="regDiv"></div>-->
+<!--</body>-->
+<!--<script>-->
+<!--    function checkReg(){-->
+<!--        let x = document.cookie;-->
+<!--        let rd = document.getElementById("regDiv")-->
+<!--        let str = x.split('; ');-->
+<!--        let cookieObject = {};-->
+<!--        let c;-->
+<!--        for (let i = 0; i < str.length; i++){-->
+<!--            c = str[i].split('=')-->
+<!--            cookieObject[c[0]] = c[1]-->
+<!--        }-->
+<!--        if ('register' in cookieObject){-->
+<!--            rd.innerHTML = `Hello ${cookieObject['register']}`-->
+<!--        }-->
+<!--        else{-->
+<!--            rd.innerHTML = "Name: <input type='text' id='name'/> <input type='button' value='Register' onclick = 'regClick()'/>"-->
+<!--        }-->
+
+<!--    }-->
+
+<!--    function regClick(){-->
+<!--        let inputName = document.getElementById('name')-->
+<!--        let name = inputName.value-->
+<!--        let expDate = new Date;-->
+<!--        expDate.setTime((new Date()).getTime() + 60000);-->
+<!--        document.cookie = `register= ${name}; expires= ${expDate.toUTCString()}; path=/;`-->
+<!--        checkReg()-->
+<!--    }-->
+<!--</script>-->
+
+<!--</html>-->
